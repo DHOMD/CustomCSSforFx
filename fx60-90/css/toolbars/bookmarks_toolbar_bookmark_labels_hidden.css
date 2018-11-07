@@ -3,10 +3,22 @@
 /****************************************************************************************/
 
 
-#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
+/* #PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
   margin-inline-end: 0px !important;
 }
 
 #PlacesToolbarItems > .bookmark-item > label {
   display: none !important;
+} */
+
+
+.bookmark-item > .toolbarbutton-text {
+margin-top: -1px !important;
+}
+.bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-text {
+display: none !important;
+}
+
+#PlacesToolbarItems > .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
+margin-inline-end: 0px !important;
 }
