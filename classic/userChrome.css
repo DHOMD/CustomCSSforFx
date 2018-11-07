@@ -299,8 +299,8 @@
 /* - TABS BELOW TITLEBAR (Fx56-like) ************************************************************/
 /* @import "./css/tabs/tabs_below_titlebar_above_navigation_toolbar.css"; /**/
 /* - TABS BELOW NAVIGATION AND BOOKMARKS TOOLBARS (tabs not on top) *****************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 									/* <-- tabs not on top */
-/* @import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 						/* <-- macOS fix */
+@import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ 									/* <-- tabs not on top */
+@import "./css/tabs/tabs_below_navigation_toolbar_macOS_fix.css"; /**/ 						/* <-- macOS fix */
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
 /* [!] not compatible to 'tabs toolbar - multiple tab lines' option *****************************/
@@ -519,7 +519,7 @@
 /* BOOKMARKS TOOLBAR ****************************************************************************/
 @import "./css/toolbars/bookmarks_toolbar_old_height.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_autohide.css"; /**/
-/* @import "./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css"; /**/
+@import "./css/toolbars/bookmarks_toolbar_bookmark_labels_hidden.css"; /**/
 /* @import "./css/toolbars/bookmarks_toolbar_in_fullscreen_mode.css"; /**/
 /* [!] simulate second bookmarks toolbar while "Bookmarks Toolbar Items" element is on nav-bar **/
 /* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
@@ -583,7 +583,7 @@
 
 /* page action button (three dots) / separator **************************************************/
 @import "./css/locationbar/pageaction_separator_in_location_bar_hidden.css"; /**/
-/* @import "./css/locationbar/pageaction_button_in_location_bar_hidden.css"; /**/
+@import "./css/locationbar/pageaction_button_in_location_bar_hidden.css"; /**/
 /* @import "./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css"; /**/
 
 /* star button / bookmarks star *****************************************************************/
