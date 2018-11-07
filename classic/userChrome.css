@@ -316,7 +316,7 @@
 /************************************************************************************************/
 
 /* custom tab appearance - [only use one at a time] *********************************************/
-@import "./css/tabs/classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
@@ -401,9 +401,9 @@
 /* @import "./css/tabs/tab_throbber_orange_ubuntu.css"; /**/
 
 /* tab close icon settings - [only use one at a time] *******************************************/
-@import "./css/tabs/tab_close_always_visible.css"; /**/
+/* @import "./css/tabs/tab_close_always_visible.css"; /**/
 /* @import "./css/tabs/tab_close_on_active_tab_only.css"; /**/
-/* @import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
+@import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
 /* @import "./css/tabs/tab_close_hidden.css"; /**/
 /* @import "./css/tabs/tab_close_hidden_for_only_one_visible_tab.css"; /**/
 /* @import "./css/tabs/tab_close_at_tabs_start.css"; /**/
