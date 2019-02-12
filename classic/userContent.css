@@ -27,7 +27,7 @@
 
   All options have significant categories and names.
 
-  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/133
+  GENERAL SUPPORT / DISCUSSION THREAD: github.com/Aris-t2/CustomCSSforFx/issues/163
 
 *************************************************************************************************/
 
@@ -90,6 +90,8 @@
 
 /* a dark appearance for inbuilt 'Dark' theme is present by default in Firefox 61+ **************/
 /* @import "./css/aboutnewtab/dark_appearance.css"; /**/
+/* alternative background color for about:newtab/home pages 'Dark' theme present in Firefox 61+ */
+/* @import "./css/aboutnewtab/dark_appearance_alternative_background.css"; /**/
 
 
 /************************************************************************************************/
