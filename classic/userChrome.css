@@ -394,7 +394,7 @@
 /* [!] Note: do not use OS titlebar with 'tabs not on top' code on macOS ************************/
 /* [!] Note: only ~fx65_v2 works with multi-tab lines option on Fx65+. **************************/
 /* - Fx 60-64 ***********************************************************************************/
-@import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- Windows/Linux */
+/* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/ /* <-- Windows/Linux */
 /* @import "./css/tabs/tabs_below_navigation_toolbar_macOS.css"; /**/ /* <-- macOS */
 /* - Fx 65-67 - Windows/Linux *******************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx65.css"; /**/
@@ -408,7 +408,7 @@
 /* - Fx 68-71 Windows/Linux (use the Fx 65+ versions for macOS) *********************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx68.css"; /**/
 /* - Fx 72+ Windows/Linux (use the Fx 65+ versions for macOS) ***********************************/
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
+@import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
 
 /* - TABS BELOW MAIN CONTENT (tabs on bottom) - EXPERIMENTAL ************************************/
 /* [!] SUPPORT THREAD: https://github.com/aris-t2/customcssforfx/issues/33 **********************/
