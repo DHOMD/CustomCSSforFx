@@ -10,7 +10,7 @@
 /* workaround for Firefox 71+ *******************/
 :root {
   --space_required_for_appbutton_fix: 36px;
-  --space_required_for_appbutton_fix2: 2px;
+  --space_required_for_appbutton_fix2: 4px;
 }
 
 :root[uidensity="compact"] {
@@ -394,6 +394,7 @@
 #main-window[tabsintitlebar] #nav-bar #nav-bar-overflow-button{
   padding-inline-end: 0px !important;
 }
+
 #main-window[tabsintitlebar] #nav-bar-customization-target {
   max-width: calc(100vw - var(--space_required_for_appbutton_fix)) !important;
 }

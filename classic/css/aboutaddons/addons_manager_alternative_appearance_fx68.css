@@ -3,8 +3,7 @@
 /****************************************************************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
 					
 	:root {
 	  --in-content-category-text-hover: HighlightText !important;
@@ -234,7 +233,7 @@
 	  padding-bottom: 7px !important;
 	}
 
-	.addon.card {
+	addon-card:not([expanded]) .addon.card {
 	  max-width: unset !important;
 	  padding-inline-end: 0px !important;
 	}
@@ -250,9 +249,7 @@
 
 	.list > .addon,
 	.list > .addon:hover {
-	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  /*duration: unset !important;*/
 	  border-bottom: 1px solid var(--in-content-box-border-color) !important;
 	}
 
@@ -261,9 +258,7 @@
 	}
 	
 	#detail-view .card {
-	  /*outset: unset !important;*/
 	  box-shadow: unset !important;
-	  /*duration: unset !important;*/
 	}
 
 	#detail-view .detail-view-container {
@@ -341,7 +336,6 @@
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
 	addon-card:not([expanded]) > .addon.card[active="false"]:hover {
 	  color: grey !important;
-	  opacity: 0.6 !important;
 	  transition: unset !important;
 	}
 	
@@ -419,6 +413,10 @@
 	button[data-l10n-id="addon-updates-manual-updates-found"] {
 	  min-height: 0 !important;
 	  padding: 0 !important;
+	}
+	
+	.card-heading-image {
+	  margin: unset !important;
 	}
 	
 	
