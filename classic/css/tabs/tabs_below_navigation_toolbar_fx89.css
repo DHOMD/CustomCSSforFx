@@ -3,7 +3,8 @@
 /****************************************************************************************/
 
 
-#nav-bar toolbarbutton:not(.all-tabs-button) .toolbarbutton-icon,
-#nav-bar toolbarbutton:not(.all-tabs-button) .toolbarbutton-badge-stack {
-  border-radius: 20px !important;
+@import "./tabs_below_navigation_toolbar_fx74.css";
+
+#navigator-toolbox {
+  position: relative;
 }
