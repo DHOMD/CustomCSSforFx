@@ -362,13 +362,13 @@
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx72.css"; /**/
 /* - Fx 74-88 Windows/Linux *********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
-@import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
+/* @import "./css/tabs/tabs_below_navigation_toolbar_fx74.css"; /**/
 /* - Fx 74-88 - macOS ***************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx74_macOS_default_tabs.css"; /**/
 /* - Fx 89+ Windows/Linux ***********************************************************************/
 /* [!] might require overriding url bars 'selection color' --> see corresponding area ***********/ 
-/* @import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
+@import "./css/tabs/tabs_below_navigation_toolbar_fx89.css"; /**/
 /* - Fx 89+ - macOS *****************************************************************************/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS.css"; /**/
 /* @import "./css/tabs/tabs_below_navigation_toolbar_fx89_macOS_default_tabs.css"; /**/
