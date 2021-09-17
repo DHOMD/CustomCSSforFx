@@ -3,7 +3,14 @@
 /****************************************************************************************/
 
 
+:root {
+  --arrowpanel-border-radius: 0 !important;
+  --panel-border-radius: 0 !important;
+}
+
 * menupopup,
 :is(menupopup, panel)[type=arrow] {
-  --panel-border-radius: 0px !important;
+  --arrowpanel-border-radius: 0 !important;
+  --panel-border-radius: 0 !important;
+  border-radius: 0 !important;
 }

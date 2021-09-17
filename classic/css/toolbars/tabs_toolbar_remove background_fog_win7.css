@@ -3,16 +3,10 @@
 /****************************************************************************************/
 
 
-#PanelUI-button,
-#PanelUI-menu-button {
-  min-width: 0.1px !important;
-  width: 0.1px !important;
-  max-width: 0.1px !important;
-  opacity: 0 !important;
+@media (-moz-os-version: windows-win7) {
+  @media (-moz-windows-default-theme) {
+    #TabsToolbar:not(:-moz-lwtheme) {
+      background-image: unset !important;
+    }
+  }
 }
-
-/*
-#PanelUI-button {
-  visibility: collapse !important;
-}
-*/
