@@ -1,11 +1,11 @@
 /* Firefox userChrome.css tweaks ****************************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code ***************/
 /* Github: https://github.com/aris-t2/customcssforfx ********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
 /* Custom CSS for Firefox 91+ *******************************************************************/
-/* version 4.1.2 ********************************************************************************/
+/* Version 4.1.4 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -143,10 +143,6 @@
 /* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
-
-/* 'icons_custom_icons*.css' options: hide 'downloads buttons badge' ****************************/
-/* @import "./css/buttons/icons_custom_icons_hide_downloads_badge.css"; /**/
-
 
 /* 'classic' pre-Proton button padding **********************************************************/
 /* @import "./css/buttons/classic_button_padding.css"; /**/
@@ -613,6 +609,7 @@
 /* identity box / page identity button **********************************************************/
 /* @import "./css/locationbar/identitybox_colors.css"; /**/
 /* @import "./css/locationbar/identitybox_labels_hidden.css"; /**/
+/* @import "./css/locationbar/identitybox_replace_search_icon_with_globe.css"; /**/
 
 /* padlock icons in identity box / page identity button - [only use one at a time] **************/
 /* @import "./css/locationbar/identitybox_padlock_icon_classic.css"; /**/
@@ -622,6 +619,7 @@
 /* @import "./css/locationbar/identitybox_padlock_icon_hidden.css"; /**/
 
 /* additional icons/buttons and tweaks for third party page action buttons **********************/
+/* @import "./css/locationbar/icons_colorized.css"; /**/
 /* @import "./css/locationbar/reader_alternative_icon.css"; /**/
 /* @import "./css/locationbar/popup_blocked_button_hidden.css"; /**/
 /* @import "./css/locationbar/zoom_button_hidden.css"; /**/
