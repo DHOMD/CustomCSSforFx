@@ -2,7 +2,7 @@
   Firefox userChrome.css tweaks: main file
   
   Custom CSS for Firefox 102+
-  Current version: 4.2.2
+  Current version: 4.2.5
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -258,7 +258,8 @@
 /* @import "./css/buttons/buttons_on_navbar_huge_48px_size.css"; /**/
 
 /* smaller button spaces in 'compact' mode - 'Classic Toolbar Buttons' add-ons 'small' mode
-   [!] 'compact mode' got hidden behind the about:config preference browser.compactmode.show 
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode
 */
 /* @import "./css/buttons/buttons_on_navbar_more_compact_mode.css"; /**/
 
@@ -822,9 +823,11 @@
    -------------------
    
    [!] only use one option at a time
+   [!] use *102.css file, if on Firefox 102-106
 */
 
 /* @import "./css/generalui/sidebar_show_on_hover.css"; /**/
+/* @import "./css/generalui/sidebar_show_on_hover102.css"; /**/ /* Firefox 102-106 */
 /* @import "./css/generalui/sidebar_width_unrestricted.css"; /**/
 
 /* -------------------
@@ -890,11 +893,15 @@
    -------------------------------------------
 
    [!] only use one option at a time
+   [!] use *102.css file, if on Firefox 102-106
+   [!] Firefox 107: set about:config > layout.css.moz-box-flexbox-emulation.enabled > true
 */
 
 /* @import "./css/generalui/searchbar_popup_engines_hidden.css"; /**/
 /* @import "./css/generalui/searchbar_popup_engines_show_labels.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels102.css"; /**/  /* Firefox 102-106 */
 /* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars.css"; /**/
+/* @import "./css/generalui/searchbar_popup_engines_show_labels_scrollbars102.css"; /**/  /* Firefox 102-106 */
 
 /* ------------------------
    MENUBARS bookmarks popup
@@ -944,14 +951,11 @@
    ------------------
 
    [!] only use one option at a time
-   [!] titlebar colors should be active in your Windows settings for 'top_toolbar_OS_accent_colors.css' to work
-   [!] if 'top_toolbar_OS_accent_colors.css' still refuses to work, customize colors using 'top_toolbar_colors.css'
+   [!] 'top_toolbar_OS_accent_colors.css' failed to work as expected and was removed
 */
 
-/* restore window accent color managed by the OS */
-/* @import "./css/toolbars/top_toolbar_OS_accent_colors.css"; /**/ 
 
-/* override titlebars and tab toolbars colors forced by Proton UI */
+/* override titlebars and tab toolbars colors */
 /* @import "./css/toolbars/top_toolbar_colors.css"; /**/ 
 
 
@@ -1092,6 +1096,10 @@
 /* ==================================
    LOCATION BAR / MEGABAR - Settings
    ================================== 
+
+
+   [!] 'compact mode' got hidden behind the 'about:config' preference 'browser.compactmode.show'
+   [!] enable browser.compactmode.show preference and compact density in 'Customize' mode  
 */
 
 /* @import "./css/locationbar/compact_mode_reduce_fontsize.css"; /**/

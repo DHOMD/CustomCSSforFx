@@ -2,6 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
+@import "./searchbar_popup_engines_show_labels102.css";
+
 
 /* NOTE
    The below variables are overridden by the ones used inside 
@@ -10,20 +12,16 @@
 */
 
 :root {
-  --tab_min_width: 50px;
-  --tab_max_width: 120px;
+  --search-one-offs_labels_height: 200px;
 }
 
-/* use 'about:config > browser.tabs.tabMinWidth' for tab min-width */
-/*
-.tabbrowser-tab:not([pinned]) {
-  min-width: var(--tab_min_width) !important;
-  clip-width: var(--tab_min_width) !important;
+#PopupSearchAutoComplete .search-panel-one-offs {
+  min-height: unset !important;
 }
-*/
 
-/* tab max-width */
-#tabbrowser-tabs:not([overflow="true"]):not([using-closing-tabs-spacer="true"]) .tabbrowser-tab[fadein]:not([pinned]) {
-  max-width: var(--tab_max_width) !important;
-  overflow: hidden !important;
+#PopupSearchAutoComplete .search-one-offs  {
+  height: var(--search-one-offs_labels_height) !important;
+  max-height: var(--search-one-offs_labels_height) !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
 }
