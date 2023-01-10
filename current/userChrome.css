@@ -527,10 +527,10 @@
 */
 
 /* Classic tabs appearance known from Firefox 4-28 */
-@import "./css/tabs/classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs.css"; /**/
 
 /* Classic tabs appearance known from Firefox 4-28 for active tab only  */
-/* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
+/**/ @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 
 /* Default tabs with increased contrast for non-active tabs */
 /* @import "./css/tabs/default_tabs_enhanced.css"; /**/
