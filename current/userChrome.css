@@ -678,9 +678,9 @@
    [!] only use one option at a time
 */
 
-@import "./css/tabs/tab_close_always_visible.css"; /**/
+/* @import "./css/tabs/tab_close_always_visible.css"; /**/
 /* @import "./css/tabs/tab_close_on_active_tab_only.css"; /**/
-/* @import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
+/**/ @import "./css/tabs/tab_close_show_on_hover_only.css"; /**/
 /* @import "./css/tabs/tab_close_hidden.css"; /**/
 /* @import "./css/tabs/tab_close_hidden_for_only_one_visible_tab.css"; /**/
 /* @import "./css/tabs/tab_close_at_tabs_start.css"; /**/
