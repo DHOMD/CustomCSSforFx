@@ -1,35 +1,12 @@
-<<<<<<< HEAD
-/* Firefox Quantum userChrome.css tweaks ************************************************/
-=======
 /* Firefox userChrome.css tweaks ********************************************************/
->>>>>>> aris/master
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
 
-<<<<<<< HEAD
-/* #PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
-=======
 #PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
->>>>>>> aris/master
   margin-inline-end: 0px !important;
 }
 
 #PlacesToolbarItems > .bookmark-item > label {
   display: none !important;
-<<<<<<< HEAD
-} */
-
-
-.bookmark-item > .toolbarbutton-text {
-margin-top: -1px !important;
-}
-.bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-text {
-display: none !important;
-}
-
-#PlacesToolbarItems > .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
-margin-inline-end: 0px !important;
-=======
->>>>>>> aris/master
 }
