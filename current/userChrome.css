@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 109+
-  Current version: 4.2.9
+  Custom CSS for Firefox 110+
+  Current version: 4.3.2
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -182,7 +182,7 @@
 
 @import "./css/buttons/icons_colorized.css"; /**/
 /* @import "./css/buttons/icons_white_icons.css"; /**/
-/* @import "./css/buttons/icons_custom_icons.css"; /**/  
+/* @import "./css/buttons/icons_custom_icons.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx1.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx2.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx3.css"; /**/
@@ -199,6 +199,7 @@
 /* @import "./css/buttons/icons_custom_icons_tango.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45.css"; /**/
 /* @import "./css/buttons/icons_custom_icons_fx45_inverted.css"; /**/
+
 
 
 /* -----------------
@@ -345,7 +346,6 @@
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata.css"; /**/
-/* @import "./css/buttons/custom_backforward_large_ff3_strata_v2.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_orange.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ff3_strata_red.css"; /**/
 /* @import "./css/buttons/custom_backforward_large_ie8.css"; /**/
@@ -532,13 +532,13 @@
 /* Classic tabs appearance known from Firefox 4-28 for active tab only  */
 /**/ @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 
-/* Default tabs with increased contrast for non-active tabs */
+/* Default tab appearance with increased contrast for non-active tabs */
 /* @import "./css/tabs/default_tabs_enhanced.css"; /**/
 
-/* Default tabs with colors set by color variables */
+/* Default tab appearance with colors set by color variables */
 /* @import "./css/tabs/default_tabs_with_colors.css"; /**/
 
-/* Tab appearance known from Firefox 57 - 88 */
+/* Tab appearance based on tabs known from Firefox 57 - 88 */
 /* @import "./css/tabs/default_tabs_photon.css"; /**/
 
 
@@ -1021,12 +1021,11 @@
    BOOKMARKS TOOLBAR: simulate second bookmarks toolbar
    ----------------------------------------------------
 
-   [!] "Bookmarks Toolbar Items" element has to be moved navigation toolbar in customizing mode
+   [!] "Bookmarks Toolbar Items" element has to be moved to navigation toolbar in customizing mode
+   
+   Use above's 'addonbar_extra_bookmarks_toolbar_below_navbar.css' to achieve this.
 */
    
-/* @import "./css/toolbars/bookmarks_toolbar_simulate_second_bm_toolbar.css"; /**/
-
-
 /* ------------------------------------------
    BOOKMARKS TOOLBAR above navigation toolbar
    ------------------------------------------
