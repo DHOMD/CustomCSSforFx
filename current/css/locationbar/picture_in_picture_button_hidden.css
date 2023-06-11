@@ -3,8 +3,7 @@
 /****************************************************************************************/
 
 
-#alltabs-button{
-  visibility: visible !important;
-  display: flex !important;
+/* hide picture in picture button when videos a playing */
+#urlbar-container #picture-in-picture-button {
+  visibility: collapse !important;
 }
-
