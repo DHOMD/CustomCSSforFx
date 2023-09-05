@@ -123,7 +123,6 @@
 /********************************************/
 
 /* lightweight theme tab colors*/
-/* lightweight theme tab colors*/
 #TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
   background-image: var(--classic_squared_tabs_lwt-dark_active_tab) !important;
 }
@@ -157,9 +156,9 @@
   border-right: 1px solid rgba(0,0,0,.4) !important;
 }
 #TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab:is([selected],[multiselected]) .tab-content {
-  border-top: 1px solid rgba(255,255,255,.6) !important;
-  border-left: 1px solid rgba(255,255,255,.2) !important; 
-  border-right: 1px solid rgba(255,255,255,.2) !important; 
+  border-top: 1px solid rgba(255,255,255,.2) !important;
+  border-left: 1px solid rgba(255,255,255,.1) !important; 
+  border-right: 1px solid rgba(255,255,255,.1) !important; 
 }
 
 #TabsToolbar:is([darktext],:-moz-lwtheme-darktext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button),
@@ -170,9 +169,9 @@
 }
 #TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext):-moz-lwtheme .tabbrowser-tab .tab-content {
-  border-top: 1px solid rgba(255,255,255,.6) !important;
-  border-left: 1px solid rgba(255,255,255,.2) !important; 
-  border-right: 1px solid rgba(255,255,255,.2) !important; 
+  border-top: 1px solid rgba(255,255,255,.2) !important;
+  border-left: 1px solid rgba(255,255,255,.1) !important; 
+  border-right: 1px solid rgba(255,255,255,.1) !important; 
 }
 
 @media (-moz-content-prefers-color-scheme: dark) {
@@ -191,15 +190,15 @@
 	  background: unset !important;
 	}
 	.tabbrowser-tab:is([selected],[multiselected]):-moz-lwtheme .tab-content {
-	  border-top: 1px solid rgba(255,255,255,.6) !important;
-	  border-left: 1px solid rgba(255,255,255,.2) !important; 
-	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	  border-top: 1px solid rgba(255,255,255,.2) !important;
+	  border-left: 1px solid rgba(255,255,255,.1) !important; 
+	  border-right: 1px solid rgba(255,255,255,.1) !important; 
 	}
 	#TabsToolbar:-moz-lwtheme :is(.tabs-newtab-button,#tabs-newtab-button):-moz-lwtheme,
 	.tabbrowser-tab .tab-content:-moz-lwtheme {
-	  border-top: 1px solid rgba(255,255,255,.6) !important;
-	  border-left: 1px solid rgba(255,255,255,.2) !important; 
-	  border-right: 1px solid rgba(255,255,255,.2) !important; 
+	  border-top: 1px solid rgba(255,255,255,.2) !important;
+	  border-left: 1px solid rgba(255,255,255,.1) !important; 
+	  border-right: 1px solid rgba(255,255,255,.1) !important; 
 	}
 }
 
@@ -227,6 +226,12 @@
 	  border-left: 1px solid rgba(0,0,0,.2) !important; 
 	  border-right: 1px solid rgba(0,0,0,.2) !important; 
 	}
+}
+
+
+/* experimental tab text opacity change */
+#TabsToolbar:is([brighttext],:-moz-lwtheme-brighttext) .tabbrowser-tab:not([selected],[multiselected]) .tab-text {
+  opacity: 0.8 !important;
 }
 
 /* Fx 100+ outline fix */
@@ -330,7 +335,7 @@
   min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 
-#TabsToolbar #tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] {
+#TabsToolbar #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] {
   min-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
   max-height: calc( var(--classic_squared_tabs_tab_height) - 1px ) !important;
 }
@@ -483,8 +488,8 @@
   min-height: unset !important;
 }
 
-#tabbrowser-tabs[overflow="true"] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
-  min-height: var(--tab-min-height) !important;
+#tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] :is(.tab-background,.tab-stack) {
+  min-height: var(--classic_squared_tabs_tab_height) !important;
 }
 
 .tab-close-button {
@@ -583,7 +588,7 @@
   border-inline-start: 0px solid color-mix(in srgb, currentColor 25%, transparent) !important;
 }
 
-:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow="true"]) {
+:root:not([privatebrowsingmode=temporary]):not([firefoxviewhidden]) :is(#firefox-view-button, #wrapper-firefox-view-button) + #tabbrowser-tabs:not([overflow]) {
   padding-inline-start: 0 !important;
   margin-inline-start: 0 !important;
 }
