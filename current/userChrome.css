@@ -571,7 +571,7 @@
 */
 
 
-* @import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
+@import "./css/tabs/tabs_below_navigation_toolbar.css"; /**/
 
 
 /* Alternative for multi-lined tabs (Glitches might occur with inactive menubar!)
