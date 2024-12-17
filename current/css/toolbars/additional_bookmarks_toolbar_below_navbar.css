@@ -3,17 +3,17 @@
 /****************************************************************************************/
 
 
-#main-window:not([customizing="true"]) #nav-bar:has(#personal-bookmarks) {
+#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) {
   padding-bottom: 26px !important;
 }
 
 /* reduce maximum width of location bar and search bar on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar:has(#personal-bookmarks) :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
+#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) :is(#urlbar-container, #urlbar, #search-container, #searchbar)  {
   min-width: 50px !important;
 }
 
 /* move bookmarks to empty space below navigation toolbar, if on navigation toolbar */
-#main-window:not([customizing="true"]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
+#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
   position: absolute !important;
   display: block !important;
   /*bottom: 0px !important;*/
@@ -22,15 +22,15 @@
   max-width: 100vw !important;
 }
 
-#main-window:not([customizing="true"]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
+#main-window:not([customizing]) #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
   margin-top: 37px !important;	
 }
 
-#main-window:not([customizing="true"])[uidensity="compact"] #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
+#main-window:not([customizing])[uidensity="compact"] #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
   margin-top: 32px !important;
 }
 
-#main-window:not([customizing="true"])[uidensity="touch"] #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
+#main-window:not([customizing])[uidensity="touch"] #nav-bar:has(#personal-bookmarks) #personal-bookmarks {
  margin-top: 41px !important;
 }
 
@@ -58,12 +58,12 @@
   max-width: 50vw !important;
 }
 
-/* workaround for megabar_expanding_breakout_disabled.css */
+/* workaround for megabar_expanding_breakout_disabled.css *//*
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout],
 #main-window #nav-bar:has(#personal-bookmarks) #urlbar[breakout][breakout-extend] {
   top: calc(0px + ((var(--urlbar-container-height,--urlbar-toolbar-height) - var(--urlbar-height)) / 2)) !important;
 }
-
+*/
 #nav-bar:has(#personal-bookmarks) #personal-toolbar-empty-description,
 #nav-bar:has(#personal-bookmarks) #personal-bookmarks toolbarbutton.bookmark-item:not(.subviewbutton) {
   padding: 0 2px !important; 
